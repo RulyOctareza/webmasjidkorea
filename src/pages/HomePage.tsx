@@ -5,7 +5,7 @@ const HomePage = () => {
         <div className="flex items-stretch justify-between w-full gap-8 md:w-10/12 ">
           <section className="w-full bottom-0 absolute md:static md:w-6/12 h-full max-w-screen-sm md:max-h-[800px]  flex justify-center overflow-hidden items-stretch bg-gradient-to-br from-sky-200 to-sky-100 md:rounded-2xl bg-blue-400">
             <img
-              src="/images/hero-image.png"
+              src="/images/korea1.jpg"
               alt="hero image"
               className="absolute bottom-0 object-cover w-full md:-mt-24 md:static"
             />
