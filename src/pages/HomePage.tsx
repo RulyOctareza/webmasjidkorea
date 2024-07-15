@@ -3,11 +3,11 @@ const HomePage = () => {
     <>
       <main className="relative flex items-start justify-center w-screen min-h-screen bg-white md:items-center">
         <div className="flex items-stretch justify-between w-full gap-8 md:w-10/12 ">
-          <section className="w-full h-full bottom-0 absolute md:relative md:w-6/12 md:max-h-[800px] md:flex md:justify-center md:items-stretch md:bg-gradient-to-br from-sky-200 to-sky-100 md:rounded-2xl md:bg-blue-400 overflow-hidden">
+          <section className="w-full bottom-0 absolute md:static md:w-6/12 h-full md:max-h-[800px] flex justify-center overflow-hidden items-stretch bg-gradient-to-br from-sky-200 to-sky-100 md:rounded-2xl bg-blue-400">
             <img
               src="/images/korea1.jpg"
               alt="hero image"
-              className="absolute inset-0 object-cover w-full h-full md:static md:object-cover md:w-full md:h-full md:rounded-2xl"
+              className="absolute inset-0 object-cover w-full h-full"
             />
           </section>
           <section className="z-50 flex flex-col justify-start w-full p-8 md:justify-center md:w-6/12 md:p-0">
