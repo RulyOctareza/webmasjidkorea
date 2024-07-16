@@ -6,14 +6,13 @@ function TestPage() {
 
   const fetchMasjid = async () => {
     const result = await getMasjids();
-    // console.log(result);
+    console.log(result);
 
     setMasjids(result as []);
   };
 
   useEffect(() => {
     fetchMasjid();
-    console.log(masjids);
   }, []);
   return (
     <div>
