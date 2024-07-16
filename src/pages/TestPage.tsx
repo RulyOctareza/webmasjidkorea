@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 import { getMasjids } from "../utils/api-utils";
 
 function TestPage() {
-  const [masjids, setMasjids] = useState<unknown[]>([]);
+  const [masjids, setMasjids] = useState<[]>([]);
 
   const fetchMasjid = async () => {
     const result = await getMasjids();
     // console.log(result);
 
-    setMasjids(result);
+    setMasjids(result as []);
   };
 
   useEffect(() => {
@@ -18,7 +18,7 @@ function TestPage() {
   return (
     <div>
       {masjids.map((item, index) => {
-        return <p key={index}>{item.name}</p>;
+        return <p key={index}>{item}</p>;
       })}
     </div>
   );
