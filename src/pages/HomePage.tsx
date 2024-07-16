@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const HomePage = () => {
   return (
     <>
@@ -15,9 +17,12 @@ const HomePage = () => {
           <p className="mt-2 mb-4 text-lg md:text-xl lg:text-2xl md:mb-8 md:mt-4 text-slate-600">
             Mari luangkan waktu untuk beribadah di Negeri Gingseng
           </p>
-          <button className="px-6 py-3 text-lg text-white bg-purple-700 rounded-full md:px-8 md:py-3 w-fit">
+          <Link
+            to={"/mosques"}
+            className="px-6 py-3 text-lg text-white bg-purple-700 rounded-full md:px-8 md:py-3 w-fit"
+          >
             Explore Now
-          </button>
+          </Link>
         </section>
       </main>
     </>
