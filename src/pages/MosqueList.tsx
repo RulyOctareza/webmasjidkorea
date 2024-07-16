@@ -18,7 +18,7 @@ function MosqueList() {
   }, []);
   return (
     <main className="flex items-start justify-center bg-gradient-to-tl from-sky-100 to-sky-200">
-      <div className="grid w-11/12 max-w-screen-xl grid-cols-1 gap-6 mt-6 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 md:mt-12">
+      <div className="grid w-11/12 max-w-screen-xl grid-cols-1 gap-6 mt-6 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 md:mt-12 justify-items-center">
         {masjids.map((item: MasjidType, index) => {
           return <MasjidCard {...item} key={index} />;
         })}
