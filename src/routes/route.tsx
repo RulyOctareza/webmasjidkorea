@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import MosqueList from "../pages/MosqueList";
-import TestPage from "../pages/TestPage";
 import ErrorPage from "../components/ErrorPage";
+import MosqueSearch from "../pages/MosqueSearch";
 
 export const router = createBrowserRouter([
   {
@@ -15,7 +15,7 @@ export const router = createBrowserRouter([
     element: <MosqueList />,
   },
   {
-    path: "/test",
-    element: <TestPage />,
+    path: "/search",
+    element: <MosqueSearch />,
   },
 ]);

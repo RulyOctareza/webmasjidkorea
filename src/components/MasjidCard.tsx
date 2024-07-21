@@ -5,7 +5,7 @@ function MasjidCard(masjid: MasjidType) {
   return (
     <Link
       to={`/masjids/${masjid.id}`}
-      className="flex items-stretch justify-between flex-1 overflow-hidden bg-white shadow rounded-2xl"
+      className="flex items-stretch justify-between flex-1 overflow-hidden bg-white rounded-2xl"
     >
       <div className="flex items-center justify-center overflow-hidden w-28 aspect-square rounded-2xl">
         <img
@@ -16,7 +16,7 @@ function MasjidCard(masjid: MasjidType) {
       </div>
       <div className="flex flex-col items-stretch justify-between flex-1 p-4">
         <div>
-          <h2 className="text-lg font-bold ">{masjid.name}</h2>
+          <h2 className="text-lg font-semibold ">{masjid.name}</h2>
           <p className="font-normal">{masjid.city}</p>
         </div>
         <a
